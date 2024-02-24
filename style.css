@@ -1,0 +1,241 @@
+body
+{   
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* to patch #featured problem */
+}
+
+.carousel-txt
+{
+    line-height: 3.5vw;
+    margin-top: 10vw;
+}
+.carousel-toptxt
+{
+    font-size: 1.5vw;
+    color: #8143a9;
+}
+.carousel-header {font-size: 6vw;}
+.carousel-bottxt {font-size: 1.2vw;}
+.carousel-img
+{
+    width: 30vw;
+    bottom: -25vw;
+}
+
+.shop-btn 
+{
+    width: 12vw;
+    height: 4vw;
+}
+.shop-btn-txt
+{
+    font-size: 1.5vw;
+    margin-bottom: 0;
+}
+
+#f-pad {background-color: #FFFFFF;}
+#f-pods {background-color: #ADC2D7;}
+#f-mac {background-color: #EDEDED;}
+
+#f-pad, #f-pods {height: 25vw;}
+#f-pad .featured-title {font-size: 3.5vw;}
+#f-pad .featured-info {font-size: 1.3vw;}
+#f-pad .featured-txt {margin-right: 3vw;}
+#f-pad .featured-img
+{
+    width: 35vw;
+    bottom: -3vw;
+    left: -5vw;
+    margin-right: -10vw;
+}
+#f-pods .featured-info {font-size: 1.25vw;}
+#f-pods .featured-title 
+{
+    font-size: 2.1vw;
+    line-height: 2.5vw;
+}
+#f-pods .featured-txt 
+{
+    width: 12vw;
+    margin-inline: -8vw 3vw;
+}
+#f-pods .featured-img
+{
+    width: 42vw;
+    position: relative;
+    left: -10vw;
+}
+#f-mac
+{
+    height: 50vw;
+    margin-left: -2.4vw;
+}
+#f-mac .featured-info {font-size: 1.2vw;}
+#f-mac .featured-title
+{
+    font-size: 4.4vw;
+    line-height: 4vw;
+}
+#f-mac .featured-txt
+{
+    margin-left: 3vw; 
+    width: 25vw;
+}
+@media (width > 991px)
+{
+    #f-mac .featured-img
+    {
+        width: 70vw;
+        position: absolute;
+        right: -45vw;
+    }
+}
+
+#browse
+{
+    background-color: #FAFAFA;
+    padding: 5vw;
+}
+#browse-heading
+{
+    font-size: 2.25vw;
+    margin-bottom: 2vw;
+}
+#browse-cats {row-gap: 2vw;}
+.category
+{
+    width: 12vw;
+    height: 12vw;
+    background-color: #EDEDED;
+    border-radius: 2vw;
+}
+.category i {font-size: 2.5vw;}
+.category p {font-size: 1.5vw;}
+
+#browse-arrows i:hover
+{
+    color: #0088ff;
+    text-shadow: grey 0 0 1vw;
+    cursor: pointer;
+}
+.category:hover
+{
+    background-color: #0088ff;
+    color: white;
+}
+
+#buy-products {padding: 5vw;}
+#buy-products li a
+{
+    font-size: 1.5vw;
+    margin-right: 1.25vw;
+    margin-bottom: 2.5vw;
+}
+.card.product-card
+{
+    background-color: #F6F6F6;
+    border-color: transparent;
+    padding: 2vw;
+}
+#pods-card .card-img-top {top: -35px;}
+#camera-card .card-img-top {top: -20px;}
+
+.favorite {display: none;}
+.favorite:checked + label i {color: red;}
+.favorite + label i
+{
+    text-shadow: black 0px 0px .3vw;
+    font-size: 2vw;
+}
+
+@media (width < 992px)
+{
+    .carousel-bg
+    {
+        transform: rotate(90deg) scale(150%);
+    }
+    .carousel-container
+    {
+        height: 75vh;
+        transform: translateY(20vh);
+    }
+    .carousel-img
+    {
+        width: 35vh;
+        bottom: -25vh;
+        margin-top: -20vh;
+    }
+    .carousel-txt {line-height: 2.5vh;}
+    .carousel-header {font-size: 4.5vh;}
+    .carousel-toptxt, .carousel-bottxt {font-size: 1.5vh;}
+
+
+    #f-pad, #f-pods {height: 50vw;}
+    #f-pad .featured-title {font-size: 8vw;}
+    #f-pad .featured-info {font-size: 3vw;}
+    #f-pad .featured-txt {margin-inline: -10vw 5vw;}
+    #f-pad .featured-img
+    {
+        width: 65vw;
+        bottom: -8vw;
+        left: -15vw;
+        margin-right: -10vw;
+    }
+    #f-pods .featured-info {font-size: 2.5vw;}
+    #f-pods .featured-title 
+    {
+        font-size: 6vw;
+        line-height: 6.5vw;
+        width: 10vw;
+    }
+    #f-pods .featured-txt 
+    {
+        width: 50vw;
+        margin-left: 35vw;
+    }
+    #f-pods .featured-img
+    {
+        width: 50vw;
+        position: absolute;
+        left: -25vw;
+    }
+    #f-mac {height: 130vw;}
+    #f-mac .featured-img {width: 80vw;}
+    #f-mac .featured-txt {width: 65vw;}
+    #f-mac .featured-info {font-size: 3vw;}
+    #f-mac .featured-title
+    {
+        font-size: 15.5vw;
+        line-height: 14vw;
+    }
+    .shop-btn
+    {
+        width: 30vw;
+        height: 7vw;
+    }
+    .shop-btn-txt
+    {
+        font-size: 2.5vw;
+    }
+    .category
+    {
+        width: 43vw;
+        height: 43vw;
+    }
+    .category i {font-size: 8vw;}
+    .category p {font-size: 5vw;}
+    #browse-heading {font-size: 7vw;}
+    #buy-products li a
+    {
+        font-size: 4vw;
+        margin-right: 3vw;
+    }
+    .card-img-top {top: -4vw;}
+}
+
+
+/* TODO:
+* 1. change the sizes of text & button in #buy-product cards
+* 2. try to fix the orientation of #buy-product card buttons
+* 3. complete the sale & footer sections */
