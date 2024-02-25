@@ -139,7 +139,6 @@
     </section>
 
     <!--! grid featured section -->
-    <!-- *problem: extra whitespace (right side) because of container-fluid/px-0 -->
     <section id="featured" class="container-fluid px-0">
       <div class="row">
         <div class="col-lg-6 col-12">
@@ -261,9 +260,11 @@
             </div>
             <img src="/resources/Card iphone.png" class="card-img-top" alt="iPhone 14 Pro Max">
             <div class="card-body text-center d-flex flex-column justify-content-between align-items-center">
-              <p class="card-text">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
-              <h4 class="card-title"><b><i>$900</i></b></h4>
-              <a href="#" class="btn btn-dark buy-btn">Buy Now</a>
+              <p class="card-text product-info">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
+              <h4 class="card-title product-price"><b><i>$900</i></b></h4>
+              <button class="buy-btn btn btn-dark text-center d-block" type="button">
+                <p class="buy-btn-txt">Buy Now</p>
+              </button>
             </div>
           </div>
         </div>
@@ -277,9 +278,11 @@
             </div>
             <img src="/resources/Card Camera.png" class="card-img-top position-relative" alt="Blackmagic Pocket Camera">
             <div class="card-body text-center d-flex flex-column justify-content-between align-items-center">
-              <p class="card-text">Blackmagic Pocket Cinema Camera 6k</p>
-              <h4 class="card-title"><b><i>$2535</i></b></h4>
-              <a href="#" class="btn btn-dark buy-btn">Buy Now</a>
+              <p class="card-text product-info">Blackmagic Pocket Cinema Camera 6k</p>
+              <h4 class="card-title product-price"><b><i>$2535</i></b></h4>
+              <button class="buy-btn btn btn-dark text-center d-block" type="button">
+                <p class="buy-btn-txt">Buy Now</p>
+              </button>
             </div>
           </div>
         </div>
@@ -293,9 +296,11 @@
             </div>
             <img src="/resources/Card Watch.png" class="card-img-top" alt="Apple Watch Series 9">
             <div class="card-body text-center d-flex flex-column justify-content-between align-items-center">
-              <p class="card-text">Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</p>
-              <h4 class="card-title"><b><i>$399</i></b></h4>
-              <a href="#" class="btn btn-dark buy-btn">Buy Now</a>
+              <p class="card-text product-info">Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</p>
+              <h4 class="card-title product-price"><b><i>$399</i></b></h4>
+              <button class="buy-btn btn btn-dark text-center d-block" type="button">
+                <p class="buy-btn-txt">Buy Now</p>
+              </button>
             </div>
           </div>
         </div>
@@ -309,9 +314,11 @@
             </div>
             <img src="/resources/Card Airpods.png" class="card-img-top position-relative" alt="Airpods Max">
             <div class="card-body text-center d-flex flex-column justify-content-between align-items-center">
-              <p class="card-text">AirPods Max Silver</p>
-              <h4 class="card-title"><b><i>$549</i></b></h4>
-              <a href="#" class="btn btn-dark buy-btn">Buy Now</a>
+              <p class="card-text product-info">AirPods Max Silver</p>
+              <h4 class="card-title product-price"><b><i>$549</i></b></h4>
+              <button class="buy-btn btn btn-dark text-center d-block" type="button">
+                <p class="buy-btn-txt">Buy Now</p>
+              </button>
             </div>
           </div>
         </div>
@@ -319,10 +326,51 @@
     </section>
 
     <!--! Sale section -->
-    <section id="sale"></section>
+    <section id="sale" class="overflow-hidden d-flex flex-lg-row flex-column align-items-center justify-content-between">
+      <img id="sale-img-1" src="/resources/Sale1.png" class=" position-relative">
+
+      <div id="sale-txt" class="text-center text-light">
+        <b><span id="sale-date">11.11 </span> <span id="sale-title"> Sale</span></b>
+        <p id="sale-desc">
+          Don't miss the exclusive deals on the latest tech on this 11.11
+          The biggest sale of the century is coming, are you ready to set foot into the future of tech?
+        </p>
+      </div>
+
+      <img id="sale-img-2" src="/resources/Sale2.png" class=" position-relative">
+    </section>
 
     <!--! Footer section -->
-    <footer></footer>
+    <footer class="d-flex flex-column flex-lg-row justify-content-between">
+      <img id="foot-logo" src="/resources/logo.png" alt="Logo" class="d-inline-block">
+      
+      <div id="social-icons" class="text-light d-flex">
+        <a href="https://twitter.com/?lang=en" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.tiktok.com/" target="_blank"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+
+      <div>
+        <p class="footer-txt">Services</p>
+        <p class="footer-txt">Bonus Program</p>
+        <p class="footer-txt">Gift Cards</p>
+        <p class="footer-txt">Credit and Payment</p>
+        <p class="footer-txt">Service Contracts</p>
+        <p class="footer-txt">Non-cash Account</p>
+        <p class="footer-txt">Payment</p>
+      </div>
+
+      <div>
+        <p class="footer-txt">Assistance to the Buyer</p>
+        <p class="footer-txt">Find an Order</p>
+        <p class="footer-txt">Terms of Delivery</p>
+        <p class="footer-txt">Exchange and Return of Goods</p>
+        <p class="footer-txt">Guarantee</p>
+        <p class="footer-txt">Frequently Asked Questions</p>
+        <p class="footer-txt">Terms and Conditions</p>
+      </div>
+    </footer>
 
   </body>
 
