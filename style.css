@@ -39,7 +39,17 @@ body
 #f-pods {background-color: #ADC2D7;}
 #f-mac {background-color: #EDEDED;}
 
-#f-pad, #f-pods {height: 25vw;}
+#f-pad, #f-pods
+{
+    height: 25vw;
+    margin-left: -2.4vw;
+}
+#f-mac
+{
+    height: 50vw;
+    margin-left: -2.4vw;
+}
+
 #f-pad .featured-title {font-size: 3.5vw;}
 #f-pad .featured-info {font-size: 1.3vw;}
 #f-pad .featured-txt {margin-right: 3vw;}
@@ -66,11 +76,6 @@ body
     width: 42vw;
     position: relative;
     left: -10vw;
-}
-#f-mac
-{
-    height: 50vw;
-    margin-left: -2.4vw;
 }
 #f-mac .featured-info {font-size: 1.2vw;}
 #f-mac .featured-title
@@ -107,8 +112,7 @@ body
 
 #browse-arrows i:hover
 {
-    color: #0088ff;
-    text-shadow: grey 0 0 1vw;
+    text-shadow: blue 0 0 .5vw;
     cursor: pointer;
 }
 .category:hover
@@ -143,8 +147,8 @@ body
 }
 
 .favorite {display: none;}
-.favorite:checked + label i {color: red;}
-.favorite:hover + label i {color: red;}
+.favorite:checked + label i,
+    .favorite:hover + label i {color: red;}
 .favorite + label i
 {
     text-shadow: black 0px 0px .3vw;
@@ -196,9 +200,10 @@ footer
 #social-icons a:hover
 {
     text-shadow: 0px 0px 1vw #958AD4;
-    font-size: large;
+    font-size: 2.5vw;
 }
-.footer-txt:hover {text-decoration: dotted underline lime;}
+.footer-txt:hover:not(:first-child)
+{text-decoration: underline lime;}
 
 @media (width < 992px)
 {
@@ -318,6 +323,7 @@ footer
         width: auto;
         height: auto;
         gap: 2vw;
+        order: 4;
     }
     #social-icons a {font-size: 3vw;}
     .footer-txt {font-size: 2.5vw;}
@@ -345,6 +351,8 @@ footer
     }
 }
 
-body {overflow-x: hidden;}
-/* patch extra whitespace on the right side
-because of container-fluid or px-0 on the #featured Section */
+html
+{
+    scrollbar-width: thin;
+    scrollbar-color: #1bbbeb #424242; 
+}
