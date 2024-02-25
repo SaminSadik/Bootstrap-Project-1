@@ -6,6 +6,7 @@ body
     padding: 0;
 }
 
+/* TODO: Remake carousel section, for mobile responsiveness */
 .carousel-txt
 {
     line-height: 3.5vw;
@@ -69,7 +70,7 @@ body
 #f-pods .featured-txt 
 {
     width: 12vw;
-    margin-inline: -8vw 3vw;
+    margin-inline: -7vw 6vw;
 }
 #f-pods .featured-img
 {
@@ -210,6 +211,7 @@ footer
     .carousel-bg
     {
         transform: rotate(90deg) scale(150%);
+        height: fit-content;
     }
     .carousel-container
     {
