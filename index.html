@@ -80,61 +80,50 @@
     </nav>
 
     <!--! carousel hero section -->
-    <section id="Carousel" class="carousel slide" data-bs-ride="true" data-bs-theme="dark">
+    <section id="carousel" class="carousel slide" data-bs-ride="true" data-bs-theme="dark">
       <div class="carousel-indicators d-lg-none">
-        <button type="button" data-bs-target="#Carousel"
-        data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true" ></button>
-        
-        <button type="button" data-bs-target="#Carousel"
-        data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
-
+      
       <div class="carousel-inner">
-        <div class="carousel-item active carousel-container">
-          <img src="/resources/carousel-bg1.jpg" class="carousel-bg d-block w-100">
-          
-          <div class="carousel-caption
-          d-flex justify-content-between align-items-center flex-column flex-lg-row">
-            <div class="carousel-txt d-flex flex-column align-items-lg-start">
-              <p class="carousel-toptxt">Pro.Beyond.</p>
-              <p class="carousel-header">iPhone <b>14 Pro</b></p>
-              <p class="carousel-bottxt">Created to change everything for the better. For everyone</p>
-              <button class="shop-btn btn btn-primary text-center d-lg-block d-none" type="button">
-                <p class="shop-btn-txt"><b>Shop Now</b></p>
-              </button>
-            </div>
-
-            <img class="carousel-img position-relative" src="/resources/iphone 14 pro.png">
+          <div class="carousel-item active">
+              <div class="carousel-container d-flex align-items-center justify-content-center" style="background-image: url('resources/carousel-bg1.jpg')">
+                  <div class="carousel-content d-flex flex-column flex-lg-row align-items-center gap-4">
+                      <div class="carousel-txt d-flex flex-column align-items-center align-items-lg-start">
+                          <p class="m-0 carousel-txt-top"><b>Pro</b>.Beyond.</p>
+                          <p class="m-0 carousel-heading">iPhone <b>14 Pro</b></p>
+                          <p class="carousel-txt-bottom">Created to change everything for the better.<b> For everyone</b></p>
+                          <button class="shop-btn btn btn-primary text-center d-lg-block d-none" type="button">
+                          <p class="shop-btn-txt"><b>Shop Now</b></p>
+                          </button>
+                      </div>
+                      <img class="carousel-img position-relative" src="/resources/iphone 14 pro.png">
+                  </div>
+              </div>
           </div>
-        </div>
-
-        <div class="carousel-item carousel-container">
-          <img src="/resources/carousel-bg2.jpg" class="carousel-bg d-block w-100">
-          
-          <div class="carousel-caption
-          d-flex justify-content-between align-items-center flex-column flex-lg-row">
-            <div class="carousel-txt order-lg-1 d-flex flex-column align-items-center">
-              <p class="carousel-toptxt">Brand New!</p>
-              <p class="carousel-header">iPhone <b>15 Pro</b></p>
-              <p class="carousel-bottxt">Experience the innovation. Costs more, same features</p>
-              <button class="shop-btn btn btn-primary text-center d-lg-block d-none" type="button">
-                <p class="shop-btn-txt"><b>Shop Now</b></p>
-              </button>
-            </div>
-
-            <img class="carousel-img order-lg-0 position-relative" src="/resources/iphone 14 pro.png">
+        
+          <div class="carousel-item">
+              <div class="carousel-container d-flex align-items-center justify-content-center" style="background-image: url('resources/carousel-bg2.jpg');">
+                  <div class="carousel-content d-flex flex-column flex-lg-row align-items-center gap-4">
+                      <div class="carousel-txt d-flex order-lg-1 flex-column align-items-center align-items-lg-end">
+                          <p class="m-0 carousel-txt-top">Brand<b> New!</b></p>
+                          <p class="m-0 carousel-heading">iPhone <b>15 Pro</b></p>
+                          <p class="carousel-txt-bottom">Experience the innovation.<b> Costs more, with same features</b></p>
+                          <button class="shop-btn btn btn-primary text-center d-lg-block d-none" type="button">
+                          <p class="shop-btn-txt"><b>Shop Now</b></p>
+                          </button>
+                      </div>
+                      <img class="carousel-img position-relative" src="/resources/iphone 14 pro.png">
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-
-      <button class="carousel-control-prev d-none d-lg-inline" type="button" 
-      data-bs-target="#Carousel" data-bs-slide="prev">
+      <button class="carousel-control-prev d-none d-lg-inline" type="button" data-bs-target="#carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-
-      <button class="carousel-control-next d-none d-lg-inline" type="button"
-      data-bs-target="#Carousel" data-bs-slide="next">
+      <button class="carousel-control-next d-none d-lg-inline" type="button" data-bs-target="#carousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -235,7 +224,7 @@
 
     <!--! Buy Products section -->
     <section id="buy-products">
-      <ul class="nav nav-underline">
+      <ul class="nav nav-underline d-flex justify-content-lg-start justify-content-between">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">
             New Arrival
@@ -259,8 +248,8 @@
               <label for="l1" class="container text-light">
                   <i class="bi bi-suit-heart-fill"></i>
               </label>
+              <img src="/resources/Card iphone.png" class="card-img-top" alt="iPhone 14 Pro Max">
             </div>
-            <img src="/resources/Card iphone.png" class="card-img-top" alt="iPhone 14 Pro Max">
             <div class="card-body text-center d-flex flex-column justify-content-between align-items-center">
               <p class="card-text product-info">Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)</p>
               <h4 class="card-title product-price"><b><i>$900</i></b></h4>
@@ -277,8 +266,8 @@
               <label for="l2" class="container text-light">
                   <i class="bi bi-suit-heart-fill"></i>
               </label>
+              <img src="/resources/Card Camera.png" class="card-img-top" alt="Blackmagic Pocket Camera">
             </div>
-            <img src="/resources/Card Camera.png" class="card-img-top position-relative" alt="Blackmagic Pocket Camera">
             <div class="card-body text-center d-flex flex-column justify-content-between align-items-center">
               <p class="card-text product-info">Blackmagic Pocket Cinema Camera 6k</p>
               <h4 class="card-title product-price"><b><i>$2535</i></b></h4>
@@ -291,12 +280,12 @@
         <div class="col">
           <div class="card product-card h-100" id="watch-card">
             <div class="card-body text-end">
-              <input type="checkbox" id="l3" class="favorite">
+              <input type="checkbox" checked="checked" id="l3" class="favorite">
               <label for="l3" class="container text-light">
                   <i class="bi bi-suit-heart-fill"></i>
               </label>
+              <img src="/resources/Card Watch.png" class="card-img-top" alt="Apple Watch Series 9">
             </div>
-            <img src="/resources/Card Watch.png" class="card-img-top" alt="Apple Watch Series 9">
             <div class="card-body text-center d-flex flex-column justify-content-between align-items-center">
               <p class="card-text product-info">Apple Watch Series 9 GPS 41mm Starlight Aluminium Case</p>
               <h4 class="card-title product-price"><b><i>$399</i></b></h4>
@@ -313,8 +302,8 @@
               <label for="l4" class="container text-light">
                   <i class="bi bi-suit-heart-fill"></i>
               </label>
+              <img src="/resources/Card Airpods.png" class="card-img-top" alt="Airpods Max">
             </div>
-            <img src="/resources/Card Airpods.png" class="card-img-top position-relative" alt="Airpods Max">
             <div class="card-body text-center d-flex flex-column justify-content-between align-items-center">
               <p class="card-text product-info">AirPods Max Silver</p>
               <h4 class="card-title product-price"><b><i>$549</i></b></h4>
